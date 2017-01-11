@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+            http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+
+    <display-name>Car Rent</display-name>
+
+    <filter>
+        <filter-name>CodingFilter</filter-name>
+        <filter-class>com.korobkin.filter.CodingFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>CodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>AdminSecurityFilter</filter-name>
+        <filter-class>com.korobkin.filter.AdminSecurityFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AdminSecurityFilter</filter-name>
+        <url-pattern>/page/admin/*</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>MainController</servlet-name>
+        <servlet-class>com.korobkin.controller.MainController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MainController</servlet-name>
+        <url-pattern>/page/*</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>/jsp/index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <error-page>
+        <location>/WEB-INF/jsp/error.jsp</location>
+    </error-page>
+
+</web-app>

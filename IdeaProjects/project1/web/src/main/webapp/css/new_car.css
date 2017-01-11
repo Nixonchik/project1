@@ -1,0 +1,11 @@
+#registration_form{
+    width: 					200px;
+    background: 			gray;
+}
+
+#registration_form button {
+    width: 					140px;
+    height: 				30px;
+    background: 			#8ea956;
+    margin: 				10px 0px 10px 0px;
+}

@@ -1,0 +1,61 @@
+html {
+	font-family: 'FontAwesome', sans-serif;
+	background-image: url(../images/backgr.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+a, img, span, h3, p, i, li, .btn{
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+a {
+	color: #030303;
+}
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('../fonts/fontawesome-webfont.eot?v=4.3.0');
+	src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.3.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.3.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.3.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+#message {
+	background-color: rgba(255, 255, 255, 0.2)	;
+	color: #000;
+	border-radius: 5px;
+	padding: 5px 10px;
+	margin: 5px 0px;
+}
+
+#error {
+	background-color: rgba(255, 101, 75, 0.81);
+	color: #fff;
+	border-radius: 5px;
+	padding: 5px 10px;
+	margin: 5px 0px;
+}
+
+#title-string {
+	align: center;
+	font-size: 400%;
+	font-family: Tetra;
+	color: white;
+}
+
+tr:hover {background-color: #f5f5f5}
+
+table {
+	padding: 10px;
+	background-color: rgba(0,0,0,0.3);
+	border-color: rgba(81, 79, 156, 0.7);
+	width: 70%;
+	border-radius: 5px;
+	margin: auto;
+	position: relative;
+}
